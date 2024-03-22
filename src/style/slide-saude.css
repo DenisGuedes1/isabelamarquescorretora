@@ -1,0 +1,141 @@
+.planos {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.planos>h3 {
+    width: 95%;
+    max-width: 600px;
+    font-size: 17px;
+    margin-top: 25px;
+    color: var(--dark-grey);
+
+}
+
+.section-slides-saude {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 380px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+}
+
+.section-saude {
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+    overflow: hidden;
+    align-items: center;
+    position: absolute;
+}
+
+.slides-saude {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.slides-saude>input {
+    display: none;
+}
+
+.navigation-bar-saude {
+    position: absolute;
+    bottom: 10px;
+
+    display: flex;
+    gap: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-manual-saude {
+    border: 2px solid var(--color-blue);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn-manual-saude:hover {
+    background-color: var(--color-blueLigth);
+    transition: 0.4s;
+}
+
+.slide-saude {
+    transition: 0.5s;
+    width: 25%;
+}
+
+.slide-saude>img {
+    max-width: 400px;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.slide-saude>div {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+#radio1-saude:checked~.first {
+    margin-left: 0%;
+
+}
+
+#radio2-saude:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3-saude:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4-saude:checked~.first {
+    margin-left: -75%;
+}
+
+
+
+@media(min-width:768px) {
+    .section-slides-saude {
+        height: 450px;
+    }
+
+    .section-saude {
+        height: 500px;
+    }
+
+    .planos {
+        flex-direction: row;
+    }
+
+    .navigation-bar-saude {
+        bottom: 190px;
+    }
+
+    .planos>h3 {
+        font-size: 17px;
+        margin-left: 60px;
+        line-height: 30px;
+    }
+
+    .slides-saude {
+        margin-top: 25px;
+    }
+
+    .slide-saude>img {
+        height: 60%;
+    }
+}

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+label {
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+:root {
+    --white: #fff;
+    --color-blue: #00008B;
+    --color-blueLigth: #6495ED;
+    --color-blueModal: #2980b9;
+    --black: #000;
+    --dark-grey: #454444;
+    --light-grey: #A9A9A9;
+    --light-grey2: #D3D3D3;
+    --green-inputModal: #2ecc71;
+}

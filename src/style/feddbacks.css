@@ -1,0 +1,141 @@
+.section-feed-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-blueLigth);
+}
+
+.section-feed-container>h3{
+    margin-top: 25px;
+    width: 90%;
+    max-width: 500px;
+    font-size: 15px;
+}
+
+.section-feed-slides {
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 40px;
+
+    align-items: center;
+    position: absolute;
+}
+
+.slides-feed {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slides-feed>input{
+    display: none;
+}
+
+.navigation-bar-feed {
+    position: absolute;
+    bottom: 20px;
+
+    display: flex;
+    gap: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-manual-feed {
+    border: 2px solid var(--white);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn-manual-feed:hover {
+    background-color: var(--black);
+    transition: 0.4s;
+}
+
+.slide-feed {
+    margin-top: 30px;
+    transition: 0.5s;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.slide-feed>div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-feed>div>h3 {
+    width: 90%;
+    max-width: 500px;
+    color: var(--white);
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 13px;
+}
+
+.slide-feed>div>p {
+    color: var(--white);
+}
+
+.slide-feed>div>button {
+    width: 50%;
+    padding: 7px;
+    border-radius: 5px;
+    max-width: 150px;
+}
+
+
+.slide-feed>div {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#radio1-feed:checked~.first {
+    margin-left: 0;
+}
+
+#radio2-feed:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3-feed:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4-feed:checked~.first {
+    margin-left: -75%;
+}
+
+@media(min-width:768px) {
+    .section-feed-container {
+        height: 330px;
+    }
+
+    .section-feed-slides {
+        height: 500px;
+    }
+
+    .navigation-bar-feed {
+        bottom: 250px;
+    }
+
+    .slide-feed>div>h3 {
+        font-size: 18px;
+    }
+    .section-feed-container>h3{
+        font-size: 20px
+    }
+}

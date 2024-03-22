@@ -1,0 +1,139 @@
+.newlaster {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 90px;
+    transition: height 900000s, opacity 0.5s;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 500;
+}
+
+#toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    display: none;
+    z-index: 1;
+}
+
+#toast.error {
+    background-color: #f44336;
+    /* Cor de fundo para erro */
+}
+
+.showModal {
+    height: 300px;
+    opacity: 1;
+    position: fixed;
+}
+
+#section-close {
+    display: flex;
+}
+
+.formModal {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    height: 200px;
+    gap: 40px;
+    align-items: center;
+    border: 1px solid var(--color-blue);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 120px;
+    z-index: 500;
+    background-color: var(--color-blueLigth);
+    animation: animateModal 1s ease;
+
+}
+
+#closeButton {
+    width: 35px;
+    height: 30px;
+    background: transparent;
+    color: var(--white);
+}
+
+#closeButton:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--black);
+    border-radius: 12px;
+}
+
+#buttonSend {
+    border-radius: 9px;
+    font-size: 12px;
+    padding: 7px;
+
+}
+
+#buttonSend:hover {
+    background-color: var(--color-blueModal);
+    color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+    display: none;
+    opacity: 0;
+    transform: translateY(-50px);
+    pointer-events: none;
+}
+
+
+.h3Modal {
+    margin-top: 20px;
+    color: var(--white);
+    font-size: 18px;
+    width: 100%;
+}
+
+.inputModal {
+    width: 70%;
+    padding: 9px;
+    border-radius: 5px;
+    max-width: 800px;
+    border: 1px solid;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+}
+
+.inputModal:focus {
+    border-color: var(--green-inputModal);
+}
+
+.conteinerinputModal {
+    display: flex;
+    gap: 15px;
+}
+
+
+@keyframes animateModal {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

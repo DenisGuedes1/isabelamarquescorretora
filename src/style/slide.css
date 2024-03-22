@@ -1,0 +1,116 @@
+.section-slides-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 380px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-blueLigth);
+}
+
+.section-slides {
+    width: 90%;
+    max-width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 40px;
+
+    align-items: center;
+    position: absolute;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+.slides>input{
+    display: none;
+}
+
+.navigation-bar {
+    position: absolute;
+    bottom: 20px;
+
+    display: flex;
+    gap: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-manual {
+    border: 2px solid var(--white);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.btn-manual:hover {
+    background-color: var(--black);
+    transition: 0.4s;
+}
+
+.slide {
+    transition: 0.5s;
+    width: 25%;
+}
+
+.slide>img {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.slide>div {   
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+.floating-image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    animation: floatAnimation 1s infinite alternate ease-in-out;
+}
+  
+  @keyframes floatAnimation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-10px);
+    }
+  }
+#iconWhats{
+    width: 70px;
+}
+@media(min-width:768px) {
+    .section-slides-container {
+        height: 580px;
+    }
+
+    .section-slides {
+        height: 500px;
+    }
+
+
+}
